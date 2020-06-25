@@ -56,23 +56,23 @@ sql语句目录：vueblog\vueblog-java\src\main\resources\vueblog.sql
 
 ## 效果
 ### 主页：
-![image-20200625130800524](doc_img/image-20200625130800524.png)
+![image-20200625130800524](./doc_img/image-20200625130800524.png)
 
 ### 博主登录：
 
-![image-20200625131059981](doc_img/image-20200625131059981.png)
+![image-20200625131059981](./doc_img/image-20200625131059981.png)
 
 ### 文章编辑：
 
-![image-20200625130852727](doc_img/image-20200625130852727.png)
+![image-20200625130852727](./doc_img/image-20200625130852727.png)
 
 ### 文章搜索：
 
-![image-20200625130944231](doc_img/image-20200625130944231.png)
+![image-20200625130944231](./doc_img/image-20200625130944231.png)
 
 ### 文章详情页：
 
-![image-20200625131033483](doc_img/image-20200625131033483.png)
+![image-20200625131033483](./doc_img/image-20200625131033483.png)
 
 ## 前端部署
 
