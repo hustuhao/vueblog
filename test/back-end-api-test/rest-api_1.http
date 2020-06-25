@@ -1,0 +1,47 @@
+
+# 登录： /login
+POST http://localhost:8081/login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+
+# 登录账户和密码
+{"username": "markerhub","password": "111111"}
+
+### 获取文章列表： /blogs
+GET http://localhost:8081/blogs
+Accept: application/json
+
+### 查找文章：/blog/{id}
+GET http://localhost:8081/blog/1
+Accept: application/json
+
+### 测试修改博客：  /blog/edit
+POST http://localhost:8081/blog/edit
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTkyMTI3MzU2LCJleHAiOjE1OTI3MzIxNTZ9.iiIfwDE-JS6ROR69fZVKYyxRPJ1sjvW-Zk0IexhoAZGVUSm07gngd3K_n2_HEG3D5lOmQPw0icIDOS2cqqWgAg             # token
+//注意，需要加上 Authorization 否则显示没有权限。
+
+# 修改文章需要提交的表单内容
+{"id": 13,"title": "测试接口：修改博客","description": "这里是摘要哈哈哈","content": "内容？？？"}
+
+
+### 测试删除博客：  /blog/delete/{id}
+GET http://localhost:8081/blog/delete/12
+#Accept: application/json, text/plain, */*
+#Accept-Encoding: gzip, deflate, br
+#Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+#Connection: keep-alive
+#User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+#Content-Type: application/json;charset=UTF-8
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTkyNzQ2NjAzLCJleHAiOjE1OTMzNTE0MDN9.W12Y9KKJIG8FhND0le59IrH3mmuWuw0SJdNqP36OAsWPW8Y4R6h3yNZBTyjceDZujTGxDfYb_qH-8WcjRIlnJQ             # token
+
+//注意，需要加上 Authorization 否则显示没有权限。
+
+### 测试搜索博客：/blogs/search?words=Java&currentPage=1
+GET http://localhost:8081/blogs/search?words=Java&currentPage=1

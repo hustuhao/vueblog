@@ -1,0 +1,45 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list />
+  </option>
+  <option name="httpMethod" value="POST" />
+  <option name="urlBase" value="http://localhost:8081" />
+  <option name="urlPath" value="/login" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Accept-Encoding" />
+        <option name="value" value="gzip, deflate, br" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Accept-Language" />
+        <option name="value" value="zh-CN,zh;q=0.9,en;q=0.8" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Connection" />
+        <option name="value" value="keep-alive" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="User-Agent" />
+        <option name="value" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Content-Type" />
+        <option name="value" value="application/json;charset=UTF-8" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list />
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="true" />
+  <option name="haveFileToSend" value="false" />
+  <option name="isFileUpload" value="false" />
+  <option name="textToSend" value="{&quot;username&quot;: &quot;markerhub&quot;,&quot;password&quot;: &quot;111111&quot;}" />
+  <option name="filesToSend" value="" />
+</RestClientRequest>
