@@ -3,7 +3,7 @@ package com.turato.controller;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.crypto.SecureUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.turato.common.dto.LoginDto;
+import com.turato.common.dto.LoginDTO;
 import com.turato.common.lang.Result;
 import com.turato.entity.User;
 import com.turato.service.UserService;
@@ -33,7 +33,7 @@ public class AccountController {
     JwtUtils jwtUtils;
 
     @PostMapping("/login")
-    public Result login(@Validated @RequestBody LoginDto loginDto, HttpServletResponse response, HttpServletRequest request) {
+    public Result login(@Validated @RequestBody LoginDTO loginDto, HttpServletResponse response, HttpServletRequest request) {
         // String result = request.getParameter("username"); 为 null，不知道为什么？
         Cookie[] cookies = request.getCookies();
         if (!CodeUtil.checkVerifyCode(request,loginDto.getVerifyCodeActual())) {
